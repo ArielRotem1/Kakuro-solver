@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="KakuroSolver.js"></script>
+    <title>Kakuro Solver</title>
+  </head>
+
+  <body style="background-color:lightblue; text-align:center">
+    <h1 style="color:red">Kakuro Solver</h1>
+    <h4></h4>
+    <table
+      id="Kakuro"
+      border="3px solid black"
+      style="margin-left:auto;margin-right:auto;"
+    >
+      <tr>
+        <td style="height:50px;width:50px;text-align:center">
+          <input style="height:45px;width:45px;text-align:center" />
+        </td>
+      </tr>
+    </table>
+
+    <br />
+    <button onclick="addCol()" style="width:75px;height:50px">add col</button>
+    <button onclick="addRow()" style="width:75px;height:50px">add row</button>
+    <button onclick="removeRow()" style="width:90px;height:50px">
+      remove row
+    </button>
+    <button onclick="removeCol()" style="width:110px;height:50px">
+      remove column
+    </button>
+    <button onclick="clearTable()" style="width:80px;height:50px">
+      clear table
+    </button>
+    <br />
+    <br />
+    <button onclick="Solve()" style="width:75px;height:50px">solve</button>
+    <br />
+    <br />
+    <h3>Instructions:</h3>
+    <h4>- Black Cell: put an X</h4>
+    <h4>- Empty Cell: leave it empty</h4>
+    <h4>
+      - Sum Cell: write like this: 3\4 is down and right, or 3\ is down, or \4
+      is right
+    </h4>
+    <h4>- Number Cell: just write the number</h4>
+  </body>
+</html>
